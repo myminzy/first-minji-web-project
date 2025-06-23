@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/mac.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="js/ScrollTrigger.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script src="js/mac.js"></script>
+    <title>MAC 홈페이지</title>
+</head>
+
+<body id="bodydd">
+    <div id="mainbox">
+        <header>
+            <div id="headWrap">
+                <div class="headInner">
+                    <div class="col-lg-2 ">
+                        <h1><a href="index.html"><img src="images/mac-logo-white.png" alt="맥로고"></a></h1>
+                    </div>
+                    <nav>
+                        <h2 class="blilnd">주메뉴 영역</h2>
+                        <div id="navWrap">
+                            <!-- 메뉴 -->
+                            <div class="navInner">
+                                <ul id="main-menu">
+                                    <li id="1"> <a href="index1.html"><span class="manutxt">브랜드소개</span></a>
+                                        <ul id="sub" class="sub">
+                                            <li class="dropdown-menu"><a href="index1.html">OUR STORY</a></li>
+                                            <li class="dropdown-menu"><a href="#">맥 에이즈 펀드</a></li>
+                                            <li class="dropdown-menu"><a href="#">맥 프로 맴버쉽</a></li>
+                                            <li class="dropdown-menu"> <a href="#">나의 맥 러버</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="2"><a href="#"><span class="manutxt">아티스트</span></a>
+                                        <ul id="sub2" class="sub2">
+                                            <li class="dropdown-menu"><a href="#">비바글램</a></li>
+                                            <li class="dropdown-menu"><a href="#">아티스트 팁</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="3"><a href="#">메이크업서비스</a>
+                                        <ul id="sub3" class="sub3">
+                                            <li class="dropdown-menu"><a href="#">매장 안내</a></li>
+                                            <li class="dropdown-menu"><a href="#">메이크업 서비스 예약</a></li>
+                                            <li class="dropdown-menu"><a href="#">버츄얼 트라이 온</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="4"><a href="#">BEST</a>
+                                        <ul id="sub4" class="sub4">
+                                            <li class="dropdown-menu"><a href="#">베스트 셀러</a></li>
+                                            <li class="dropdown-menu"><a href="#">립스틱 베스트 셀러</a></li>
+                                            <li class="dropdown-menu"><a href="#">아이 베스트 셀러</a></li>
+                                            <li class="dropdown-menu"><a href="#">페이스 베스트 셀러</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 아이콘  -->
+                            <div class="nav_icon">
+                                <ul>
+                                    <li><a href="#" alt="장바구니"></a></li>
+                                    <li><a href="#" alt="마이페이지"></a></li>
+                                    <li><a href="#" alt="돋보기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- 햄버거아이콘  -->
+                    <button id="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="rgbblack"></div>
+
+            <!-- 모바일 메뉴 -->
+            <nav id="moblie_bt">
+                <h2 class="blilnd">주메뉴 영역</h2>
+                <div id="mobileWrap">
+                    <a href="index.html"><img src="images/mac-logo-white.png" alt="맥로고"></a>
+                    <!-- 검색 -->
+                    <button id="close">
+                        닫기창
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="searchWrap">
+                        <form action="#" method="get">
+                            <div class="searchOn">
+                                <label for="inputName">검색하기</label>
+                                <input type="search" id="inputName">
+                                <button type="submit">검색하기<img src="images/search.png">
+                                    <hr>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mobilebox">
+                    <div class="moblie_menu">
+                        <ul>
+                            <li><a id="m1">브랜드소개<span class="pluse">+</span><span class="minuse">-</span></a>
+                                <!-- <li><a id="m1" href="index1.html">브랜드소개<span class="pluse">+</span><span class="minuse">-</span></a>  -->
+                                <ul class="m-sub">
+                                    <li><a href="index1.html">OUR STORY</a></li>
+                                    <li><a href="#">맥 에이즈 펀드</a></li>
+                                    <li><a href="#">맥 프로 맴버쉽</a></li>
+                                    <li><a href="#">나의 맥 러버</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="m2">아티스트<span class="pluse">+</span><span class="minuse">-</span></a>
+
+                                <ul class="m-sub2">
+                                    <li><a href="#">비바글램</a></li>
+                                    <li><a href="#">아티스트 팁</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="m3">메이크업서비스<span class="pluse">+</span><span class="minuse">-</span></a>
+                                <ul class="m-sub3">
+                                    <li><a href="#">매장 안내</a></li>
+                                    <li><a href="#">메이크업 서비스 예약</a></li>
+                                    <li><a href="#">버츄얼 트라이 온</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="m4">BEST<span class="pluse">+</span><span class="minuse">-</span></a>
+                                <ul class="m-sub4">
+                                    <li><a href="#">베스트 셀러</a></li>
+                                    <li><a href="#">립스틱 베스트 셀러</a></li>
+                                    <li><a href="#">아이 베스트 셀러</a></li>
+                                    <li><a href="#">페이스 베스트 셀러</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="moblieInner">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">|</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">장바구니</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <div class="visual">
+            <div class="mainWrap" id="mainWrap">
+                <div class="mainsilde1">
+                    <div class="mainInner1">
+                        <div class="mainbox_txt">
+                            <p>MAC WITH LISA</p>
+                            <a href="#">SHOP NOW+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainsilde2">
+                    <div class="mainInner2">
+                        <div class="mainbox_txt">
+                            <p>DESIGN BY LISA</p>
+                            <a href="#">VIEW NOW+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainsilde3">
+                    <div class="mainInner3">
+                        <div class="mainbox_txt3">
+                            <p>LISA'S FIRST-EVER</p>
+                            <p>MAC COLLECTION</p>
+                            <a href="#">SHOP NOW+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playbtn">
+                <button class="play">
+                    <div class="playbox">
+                        <a href="#" class="num"><img src="/images/play.png" alt="재생시작"></a>
+                    </div>
+                </button>
+                <span class="playbar"> / </span>
+                <button class="pause">
+                    <div class="stopbox">
+                        <a href="#" class="num"><img src="/images/stop.png" alt="재생정지"></a>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <main id="main">
+        <section id="secbox1">
+            <div class="storyWrap">
+                <h2>ABOUT OUR STORY</h2>
+                <div class="storyInner">
+                    <div class="storyBox">
+                        <div class="content" data-trigger>
+                            <div class="content_txt">
+                                <strong><span></span><b>브랜드필러</b><br>
+                                    Make-Up Art Cosmetics</strong>
+                                <p>“ M·A·C 은 사회적 책임을 믿습니다. ”</p>
+                            </div>
+                            <a href="#">자세히보기+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brandstroy" data-trigger>
+                    <p>맥은 다양성과 개성을 존중하며, 자랑스러운 커뮤니티입니다. 비바 글램(VIVA GLAM), 에이즈 펀드(M·A·C AIDS Fund)와 함께 합니다.
+                        패션, 예술 및 대중문화의 선도적 인재들과 콜라보레이션하며 패션 트렌드세팅을 이끌고 맥의 아티스트는 전 세계 패션위크의 백스테이지에서 트렌드를 만듭니다.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="secbox2">
+            <h2>INTRODUCTION</h2>
+            <div class="introWrap">
+                <div class="introInner">
+                    <div class="introbox">
+                        <div class="introslide">
+                            <span class="span1"></span>
+                            <span class="span2"></span>
+                        </div>
+                    </div>
+                    <div class="introtxt" data-trigger>
+                        <strong><b class="txt1"> “ 맥의 탄생</b>
+                            : 놀라운 시작에서 현재까지<b class="txt2">”</b></strong>
+                        <p>맥은 다양성과 개성을 존중하며, 지지합니다.<br>
+                            맥은 메이크업 기술에서 갖춘 전문성<br>
+                            덕분에 전 세계를 선도하는 프로페셔널<br>
+                            메이크업 권위자로 자리매김했습니다.<br>
+                        </p>
+                        <span>(MAKE -UP WOW TO NOW!)</span>
+                        <a href="#">자세히보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secbox3">
+            <h2>PRODUCT</h2>
+            <div id="proWrap">
+                <div class="proBox">
+                    <div class="proInner">
+                        <div class="proslider">
+                            <div class="probox1 jb-title">
+                                <a class="" href="#">
+                                    <div class="jb-text">31,500원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt ">
+                                        <h3>MAC 러브 미 립스틱</h3>
+                                        <p>MAC LOVE ME LIPSTICK</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox2">
+                                <a href="#">
+                                    <div class="jb-text">21,000원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>플레이 기가블랙 래쉬 마스카라</h3>
+                                        <p>PLAY GIGABLACK LASH</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox3">
+                                <a href="#">
+                                    <div class="jb-text">32,000원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>맥 파우더 키스 아이 섀도우</h3>
+                                        <p>POWDER EYE SHADOW</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox4">
+                                <a href="#">
+                                    <div class="jb-text">42,500원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>아이 브로우 빅 부스트 파이버</h3>
+                                        <p>EYE BROWS BIG BOOST</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox5">
+                                <a href="#">
+                                    <div class="jb-text">35,000원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>파우더 키스 립스틱 설트리네스</h3>
+                                        <p>LIPSTICK SULTRINESS</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox6">
+                                <a href="#">
+                                    <div class="jb-text">67,500원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>스튜디오 퍼펙트 엠티 컴팩트</h3>
+                                        <p>PERFECT MT COMPACT </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox7">
+                                <a href="#">
+                                    <div class="jb-text">53,000원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>MAC 스튜디오 픽스 쿠션</h3>
+                                        <p>MAC STUDIO ALL FIX</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="probox8">
+                                <a href="#">
+                                    <div class="jb-text">45,500원
+                                        <br>
+                                        <p>view+</p>
+                                    </div>
+                                    <span></span>
+                                    <div class="box_txt">
+                                        <h3>라이트풀 C+ 로즈 톤업 베이스</h3>
+                                        <p>C+ ROSE TONE UP BASE</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="probottom">
+                        <a href="#">MORE+</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="secbox4">
+            <h2>maclover</h2>
+            <div class="loverwrap">
+                <div class="loverInner1">
+                    <h3>MAKE UP SERVICE</h3>
+                    <div class="lover1"><span></span></div>
+                    <p>MAC 아티스트의 프로페셔널한 뷰티 컨설팅<br>
+                        맥 아티스트가 당신의 이미지와 개성에<br>
+                        맞는 메이크업 룩을 연출해 드립니다.<br>
+                        당신에게 맞는 컨설팅을 지금 바로 예약하세요!</p>
+                    <a href="#">예약하기</a>
+                </div>
+
+                <div class="loverInner2">
+                    <h3>VIVA-CLAM LIPSTICK</h3>
+                    <div class="lover2"><span></span></div>
+                    <p>비바글램 립스틱은 부가세를 제외한 판매 금액의<br>
+                        100% 전액이 지역 단체에 기부됩니다.<br>
+                        27주년 한정판 비바글램 x 키스해링<br>
+                        립스틱으로 맥의 글로벌 캠페인에 동참해 보세요!</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>BRAND FLIM</h2>
+            <div class="videoWrap">
+                <div class="videoInner">
+                    <div class="videobox">
+                        <video src="images/macvideo.mp4" autoplay loop muted></video>
+                    </div>
+                    <div class="videotxt">
+                        <p>1994년 HIV와 AIDS가 전 세계에 계속 퍼져나가자 맥은 회사의 자선적 초점을 맞춘 맥 에이즈 펀드가 신설되었습니다. <br>
+                            지금까지 비바 글램(VIVA GLAM) 캠페인을 통해 HIV/AIDS 퇴치를 위한 기금으로 3억4천만 달러가 모였으며, <br>
+                            레이디 가가(Lady Gaga), 파멜라 앤더슨(Pamela Anderson), 니키 미나즈(Niki Minaj) 같은 스타가 대변인으로 활동했습니다.</p>
+                        <a href="#">VIVA GLAM</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secbox5">
+            <h2>ARTIST TIP!</h2>
+            <div id="tipWrap">
+                <div class="tipbox">
+                    <div class="tipInner1">
+                        <h3>Instant Artistry<br>
+                            자연스러운 컨투어링 팁</h3>
+                        <div class="tip1"><span></span></div>
+                        <p>자연스러운 컨투어링과 하이라이트는 완벽하게 나의 얼굴을 입체적으로 살려주죠. 맥 수석 아티스트 Mickey Contractor 가 소개하는 부드러운 컨투어링 팁을
+                            만나보세요.</p>
+                        <div class="view">
+                            <a href="#">동영상보러가기+</a>
+                        </div>
+                    </div>
+                    <div class="tipInner2">
+                        <h3>Instant Artistry<br>
+                            빠르고 쉬운 스모키 아이 연출법</h3>
+                        <div class="tip2"><span></span></div>
+                        <p>맥 수석 아티스트 Beatriz Cisneros가 우아하면서도 드라마틱한 스모키 아이 연출법을 공개합니다. 단 3가지 스텝만으로도 완성할 수 있는 팁을 지금 바로
+                            만나보세요!</p>
+                        <div class="view">
+                            <a href="#">동영상보러가기+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more"><a href="#">MORE VIEW+</a></div>
+            </div>
+        </section>
+
+        <section id="bestWrap">
+            <h2>NEW!<span>BEST SELLER</span></h2>
+            <div class="best">
+                <div class="bestInner">
+                    <ul>
+                        <li>
+                            <div id="wrap">
+                                <a class="btn_layerpopup" href="#layerPopup">
+                                    <figure>
+                                        <img src="images/bestseller1.jpg" alt />
+                                        <figcaption><img src="images/plus.png"></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="layer-popup" id="layerPopup">
+                                    <div class="layerBox">
+                                        <div class="header">
+                                            <a class="btn_close_layer"><img src="images/bl-close.png" /></a>
+                                        </div>
+                                        <div class="layer-containers">
+                                            <img class="mainimg" src="images/bestseller1.jpg" alt />
+                                            <p></p>
+                                            <div class="layer_txt">
+                                                <h4>FACE</h4>
+                                                <strong>스튜디오 픽스 플루이드 파운데이션<br>
+                                                    SPF15/PA++ 스킨 밸런싱 컴플렉스</strong><br>
+                                                <a href="#">BUY NOW+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>FACE</p>
+                        </li>
+                        <li>
+                            <div id="wrap">
+                                <a class="btn_layerpopup2" href="#pppp2">
+                                    <figure>
+                                        <img src="images/bestseller2.jpg" alt />
+                                        <figcaption><img src="images/plus.png"></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="layer-popup2" id="pppp2">
+                                    <div class="layerBox">
+                                        <div class="header">
+                                            <a class="btn_close_layer"><img src="images/bl-close.png" /></a>
+                                        </div>
+                                        <div class="layer-containers2">
+                                            <img class="mainimg" src="images/bestseller2.jpg" alt />
+                                            <div class="layer_txt">
+                                                <h4>SKINCARE</h4>
+                                                <strong>프렙+프라임 픽스 플러스 매티파잉 <br>
+                                                    미스트 FIX+ MATTE</strong>
+                                                <a href="#">BUY NOW+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>SKINCARE</p>
+                        </li>
+                        <li>
+                            <div id="wrap">
+                                <a class="btn_layerpopup3" href="#layerPopup3">
+                                    <figure>
+                                        <img src="images/bestseller3.jpg" alt />
+                                        <figcaption><img src="images/plus.png"></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="layer-popup3" id="layerPopup3">
+                                    <div class="layerBox">
+                                        <div class="header">
+                                            <a class="btn_close_layer"><img src="images/bl-close.png" /></a>
+                                        </div>
+                                        <div class="layer-containers">
+                                            <img class="mainimg" src="images/bestseller3.jpg" alt />
+                                            <div class="layer_txt">
+                                                <h4>LIPSTICk</h4>
+                                                <strong>파우더 키스 모이스춰 립스틱<br>
+                                                    BOLD&SOFT LIPSTICK</strong>
+                                                <a href="#">BUY NOW+</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p>LIPSTICk</p>
+                        </li>
+                        <li>
+                            <div id="wrap">
+                                <a class="btn_layerpopup4" href="#layerPopup4">
+                                    <figure>
+                                        <img src="images/bestseller4.jfif" alt />
+                                        <figcaption><img src="images/plus.png"></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="layer-popup4" id="layerPopup4">
+                                    <div class="layerBox">
+                                        <div class="header">
+                                            <a class="btn_close_layer"><img src="images/bl-close.png" /></a>
+                                        </div>
+                                        <div class="layer-containers">
+                                            <img class="mainimg" src="images/bestseller4.jfif" alt />
+                                            <div class="layer_txt">
+                                                <h4>EYES</h4>
+                                                <strong>MAC DAZZLE SHADOW <br>
+                                                    캔트 스탑 돈트 스탑</strong>
+                                                <a href="#">BUY NOW+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>EYES</p>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="best_txt" trigger>
+                    <p>NEW 맥 컬러 엑세스 젤 펜슬 아이라이너 포함 9만원 이상 구매 시 <br>
+                        한정판 귀여운 글로우 플레이 립 밤 증정!</p>
+
+                    <a href="#">SHOP NOW +</a>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="go_top">
+            <p>TOP</p>
+        </a>
+    </main>
+
+
+    <footer>
+        <div class="foot">
+            <div class="footWrap">
+                <div class="ft_top">
+                    <div class="footWrap1">
+                        <div class="footInner">
+                            <a href="#">맥스토어</a>
+                            <div class="hr"></div>
+                            <ul>
+                                <li><a href="#">매장안내</a></li>
+                            </ul>
+                        </div>
+                        <div class="footInner">
+                            <a href="#">고객관리지원팀</a>
+                            <div class="hr"></div>
+                            <ul>
+                                <li><a href="#">CONTACT US</a></li>
+                                <li><a href="#">02-6971-3291</a></li>
+                                <li><a href="#">FAQS</a></li>
+                                <li><a href="#">배송정보</a></li>
+                                <li><a href="#">반품 및 교환</a></li>
+                            </ul>
+                        </div>
+                        <div class="footInner">
+                            <a href="#">ABOUT US</a>
+                            <div class="hr"></div>
+                            <ul>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">OUR STORY</a></li>
+                                <li><a href="#">맥 에이즈 펀드</a></li>
+                                <li><a href="#">맥 프로 멤버십</a></li>
+                                <li><a href="#">나의 맥 러버</a></li>
+                                <li><a href="#">채용 정보</a></li>
+                                <li><a href="#">ANIMAL TESTING</a></li>
+                            </ul>
+                        </div>
+                        <div class="footInner">
+                            <a href="#">내 정보 및 주문관리</a>
+                            <div class="hr"></div>
+                            <ul>
+                                <li><a href="#">내 정보 확인 및 수정</a></li>
+                                <li><a href="#">주문 조회</a></li>
+                                <li><a href="#">주문 내역 조회</a></li>
+                                <li><a href="#">위시리스트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="ft_sns">
+                        <div class="snsInner">
+                            <div class="footWrap2">
+                                <a href="#">로그인</a>
+                                <span>|</span>
+                                <a href="#">회원가입</a>
+                            </div>
+
+                            <div class="footWrap3">
+                                <a href="#"><span>Facebook</span></a>
+                                <a href="#"><span>Instergram</span></a>
+                                <a href="#"><span>Youtube</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ft_bt">
+                    <div class="ft_bottom">
+                        <p>
+                            <span>이엘씨에이한국(유) 대표 TENG, HSIAO-HUA 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232 <br></span>
+                            <span>사업자등록번호: 211-81-71889|<br></span>
+                            <span>통신판매업신고번호: 강남-15737호|<br></span>
+                            <span>고객관리지원팀: 02-6971-3291 CONSUMERCARE@KR.MACCOSMETICS.COM|<br></span>
+                            <span>호스팅서비스 사업자: ㈜엘지유플러스</span>
+                        </p>
+                    </div>
+
+                    <div class="ft_logo">
+                        <a href="index.html" class="">맥로고</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

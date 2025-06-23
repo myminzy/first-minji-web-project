@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/mac_brand.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="js/ScrollTrigger.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script src="js/mac_brand.js"></script>
+    <title>MAC 서브페이지</title>
+</head>
+
+<body id="bodydd">
+
+    <div id="mainbox">
+        <header>
+            <div id="headWrap">
+                <div class="headInner">
+                    <div class="col-lg-2 ">
+                        <h1><a href="index.html"><img src="images/mac-logo-white.png" alt="맥로고"></a></h1>
+                    </div>
+                    <nav>
+                        <h2 class="blilnd">주메뉴 영역</h2>
+                        <div id="navWrap">
+                            <!-- 메뉴 -->
+                            <div class="navInner">
+                                <ul id="main-menu">
+                                    <li id="1"> <a href="#"><span class="manutxt">브랜드소개</span></a>
+                                        <!-- <li><a id="m1" href="index1.html">브랜드소개<span class="pluse">+</span><span class="minuse">-</span></a>  -->
+                                        <ul id="sub" class="sub">
+                                            <li class="dropdown-menu"><a href="index1.html">OUR STORY</a></li>
+                                            <li class="dropdown-menu"><a href="#">맥 에이즈 펀드</a></li>
+                                            <li class="dropdown-menu"><a href="#">맥 프로 맴버쉽</a></li>
+                                            <li class="dropdown-menu"> <a href="#">나의 맥 러버</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="2"><a href="#"><span class="manutxt">아티스트</span></a>
+                                        <ul id="sub2" class="sub2">
+                                            <li class="dropdown-menu"><a href="#">비바글램</a></li>
+                                            <li class="dropdown-menu"><a href="#">아티스트 팁</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="3"><a href="#">메이크업서비스</a>
+                                        <ul id="sub3" class="sub3">
+                                            <li class="dropdown-menu"><a href="#">매장 안내</a></li>
+                                            <li class="dropdown-menu"><a href="#">메이크업 서비스 예약</a></li>
+                                            <li class="dropdown-menu"><a href="#">버츄얼 트라이 온</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="4"><a href="#">BEST</a>
+                                        <ul id="sub4" class="sub4">
+                                            <li class="dropdown-menu"><a href="#">베스트 셀러</a></li>
+                                            <li class="dropdown-menu"><a href="#">립스틱 베스트 셀러</a></li>
+                                            <li class="dropdown-menu"><a href="#">아이 베스트 셀러</a></li>
+                                            <li class="dropdown-menu"><a href="#">페이스 베스트 셀러</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 아이콘  -->
+                            <div class="nav_icon">
+                                <ul>
+                                    <li><a href="#" alt="장바구니"></a></li>
+                                    <li><a href="#" alt="마이페이지"></a></li>
+                                    <li><a href="#" alt="돋보기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- 햄버거아이콘  -->
+                    <button id="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="rgbblack"></div>
+
+            <!-- 모바일 메뉴 -->
+            <nav id="moblie_bt">
+                <h2 class="blilnd">주메뉴 영역</h2>
+                <div id="mobileWrap">
+                    <a href="index.html"><img src="images/mac-logo-white.png" alt="맥로고"></a>
+                    <!-- 검색 -->
+                    <button id="close">
+                        닫기창
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="searchWrap">
+                        <form action="#" method="get">
+                            <div class="searchOn">
+                                <label for="inputName">검색하기</label>
+                                <input type="search" id="inputName">
+                                <button type="submit">검색하기<img src="images/search.png">
+                                    <hr>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mobilebox">
+                    <div class="moblie_menu">
+                        <ul>
+                            <li><a id="m1">브랜드소개<span class="pluse">+</span><span class="minuse">-</span></a>
+                                <!--<li><a id="m1" href="index1.html">브랜드소개</a>-->
+                                <ul class="m-sub">
+                                    <li><a href="index1.html">OUR STORY</a></li>
+                                    <li><a href="#">맥 에이즈 펀드</a></li>
+                                    <li><a href="#">맥 프로 맴버쉽</a></li>
+                                    <li><a href="#">나의 맥 러버</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="m2">아티스트<span class="pluse">+</span><span class="minuse">-</span></a>
+
+                                <ul class="m-sub2">
+                                    <li><a href="#">비바글램</a></li>
+                                    <li><a href="#">아티스트 팁</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="m3">메이크업서비스<span class="pluse">+</span><span class="minuse">-</span></a>
+                                <ul class="m-sub3">
+                                    <li><a href="#">매장 안내</a></li>
+                                    <li><a href="#">메이크업 서비스 예약</a></li>
+                                    <li><a href="#">버츄얼 트라이 온</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="m4">BEST<span class="pluse">+</span><span class="minuse">-</span></a>
+                                <ul class="m-sub4">
+                                    <li><a href="#">베스트 셀러</a></li>
+                                    <li><a href="#">립스틱 베스트 셀러</a></li>
+                                    <li><a href="#">아이 베스트 셀러</a></li>
+                                    <li><a href="#">페이스 베스트 셀러</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="moblieInner">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">|</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">장바구니</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <main id="serve">
+            <section class="section1">
+                <h2>MAC BRAND STORY</h2>
+                <div class="brandWrap">
+                    <div class="brandInner">
+                        <div class="brandSlide">
+                            <span class="slider1"></span>
+                            <span class="slider2"></span>
+                            <span class="slider3"></span>
+                        </div>
+                        <div class="brandtxt">
+                            <h3>M·A·C(메이크업 아트 코스메틱스, Make-Up Art Cosmetics)</h3>
+                            <strong>맥은 세련된 실용성을 제공하는 것으로 궁극적인 컬러 권위자로서 입지를 다지기로 선택했습니다. 뷰티 브랜드 업계 최초로 프로페셔널 메이크업 아티스트가
+                                매장에 배치되었습니다.</strong>
+                            <p>전통적인 홍보 기술을 통해 매출을 유도하기보다는 신중히 제작한 제품 라인의 통합성에 의존했습니다.
+                                그리고 브랜드 이미지에 '별난 특성'을 살짝 더했습니다. 그 무엇보다 개성과 자기표현을 존중하는
+                                맥은 세련된 스토어와 백화점 매장에 여장과 극적임이라는 훌륭한 감각을 도입했습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section2">
+                <h2>MAC MEMBERSHIP SERVICE</h2>
+                <div class="memberWrap">
+                    <div class="macgirl" data-trigger>
+                        <h3>“ 나는 MAC 걸 입니다! ”</h3>
+                        <p>비바 글램이여 영원하라! 우리는 모두 맥 걸입니다!</p>
+                    </div>
+                    <div class="memberInner">
+                        <div class="svcWrap">
+                            <div class="svcInner">
+                                <div class="svcBox">
+                                    <div class="memboxWrap" data-trigger>
+                                        <div class="memboxInner1">
+                                            <h4>맥 에이즈 펀드</h4>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="background"></div>
+                                </div>
+                                <div class="svcBox">
+                                    <div class="memboxWrap" data-trigger>
+                                        <div class="memboxInner2">
+                                            <h4>비바글램</h4>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="background"></div>
+                                </div>
+                                <div class="svcBox">
+                                    <div class="memboxWrap" data-trigger>
+                                        <div class="memboxInner3">
+                                            <h4>맥 프로 맴버쉽</h4>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="background"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcback"></div>
+                        <div class="proview">
+                            <a href="#">맥 PRO를 방문해보세요.+</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section3">
+                <h2>MAC COSMETICS BUSINESS</h2>
+                <div class="busiWrap">
+                    <div class="busiInner">
+                        <span></span>
+                        <div class="busitxt" trigger>
+                            <strong>매장의 이면에서 맥의 전략</strong>
+                            <p>맥은 브랜드 이미지에 '별난 특성'을 살짝 더했습니다.<br>
+                                무엇보다 개성과 자기표현을 존중하는 맥은 세련된<br>
+                                스토어와 백화점 매장에 여장과 극적임이라는<br>
+                                훌륭한 감각을 도입했습니다.</p>
+                            <a href="#">BOOK NOW+</a>
+                        </div>
+                    </div>
+                    <div class="busiInner" trigger-image>
+                        <span></span>
+                        <div class="busitxt">
+                            <strong>유명 인사들과 콜라보레이션</strong>
+                            <p>콜라보레이션을 통해 계속해서 맥의 기존 팬과<br>
+                                신규 팬에 대한 범위를 확대하고 있습니다. </p>
+                            <a href="#">MORE+</a>
+                        </div>
+                    </div>
+                    <div class="busiInner" trigger-image>
+                        <span></span>
+                        <div class="busitxt">
+                            <strong>에스티 로더 컴퍼니즈(Estée Lauder Companies)</strong>
+                            <p>매년 새로운 카테고리, 제품을 비롯하여 50개 이상의 컬렉션을<br>
+                                개발하는데 여전히 전념하고 있으며, 모든 신제품은 소비자와<br>
+                                프로페셔널 메이크업 아티스트의 요구를 계속 충족하고 있습니다.</p>
+                            <a href="#">MORE+</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section4">
+                <h2>ANIMAL TESTING</h2>
+                <div class="testWrap">
+                    <div class="testInner">
+                        <div class="testbox">
+                            <span></span>
+                            <h4>IIVS 테스트</h4>
+                        </div>
+                        <div class="testbox">
+                            <span></span>
+                            <h4>국제적인 지원 활동</h4>
+                        </div>
+                        <div class="testbox">
+                            <span></span>
+                            <h4>시험관 검사</h4>
+                        </div>
+                    </div>
+                    <div class="test_txt" data-trigger>
+                        <strong>“ 맥은 동물실험 없는 세상을 위해 노력합니다. ”</strong>
+                        <p>맥은 동물실험을 하지 않습니다.<br>
+                            비트로과학연구원(Institute for In Vitro Sciences, IIVS)과 파트너십을 맺고<br>
+                            비 동물실험적인 대안 방법책의 수용 확대를 위해 노력하고 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section5">
+                <h2>MAC STORE INFORMATION</h2>
+                <div class="storeWrap">
+                    <div class="storeBox">
+                        <div class="storeslick">
+                            <div class="storeInner">
+                                <div class="store1">
+                                    <span></span>
+                                    <h4>글로벌 매장</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store2">
+                                    <span></span>
+                                    <h4>맥 스토어</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store3">
+                                    <span></span>
+                                    <h4>백화점 매장</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store4">
+                                    <span></span>
+                                    <h4>면세점</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store5">
+                                    <span></span>
+                                    <h4>프로 스토어</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store6">
+                                    <span></span>
+                                    <h4>맥 맴버쉽</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store7">
+                                    <span></span>
+                                    <h4>일반 매장</h4>
+                                </div>
+                            </div>
+                            <div class="storeInner">
+                                <div class="store8">
+                                    <span></span>
+                                    <h4>맥 스튜디오</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storesearch">
+                            <p>현재 위치에서 맥 매장을 찾아보세요!</p>
+                            <a href="#">근처 매장 찾아보기 <span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a href="#" class="go_top">
+                <p>TOP</p>
+            </a>
+        </main>
+
+        <footer>
+            <div class="foot">
+                <div class="footWrap">
+                    <div class="ft_top">
+                        <div class="footWrap1">
+                            <div class="footInner">
+                                <a href="#">맥스토어</a>
+                                <div class="hr"></div>
+                                <ul>
+                                    <li><a href="#">매장안내</a></li>
+                                </ul>
+                            </div>
+                            <div class="footInner">
+                                <a href="#">고객관리지원팀</a>
+                                <div class="hr"></div>
+                                <ul>
+                                    <li><a href="#">CONTACT US</a></li>
+                                    <li><a href="#">02-6971-3291</a></li>
+                                    <li><a href="#">FAQS</a></li>
+                                    <li><a href="#">배송정보</a></li>
+                                    <li><a href="#">반품 및 교환</a></li>
+                                </ul>
+                            </div>
+                            <div class="footInner">
+                                <a href="#">ABOUT US</a>
+                                <div class="hr"></div>
+                                <ul>
+                                    <li><a href="#">ABOUT US</a></li>
+                                    <li><a href="#">OUR STORY</a></li>
+                                    <li><a href="#">맥 에이즈 펀드</a></li>
+                                    <li><a href="#">맥 프로 멤버십</a></li>
+                                    <li><a href="#">나의 맥 러버</a></li>
+                                    <li><a href="#">채용 정보</a></li>
+                                    <li><a href="#">ANIMAL TESTING</a></li>
+                                </ul>
+                            </div>
+                            <div class="footInner">
+                                <a href="#">내 정보 및 주문관리</a>
+                                <div class="hr"></div>
+                                <ul>
+                                    <li><a href="#">내 정보 확인 및 수정</a></li>
+                                    <li><a href="#">주문 조회</a></li>
+                                    <li><a href="#">주문 내역 조회</a></li>
+                                    <li><a href="#">위시리스트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="ft_sns">
+                            <div class="snsInner">
+                                <div class="footWrap2">
+                                    <a href="#">로그인</a>
+                                    <span>|</span>
+                                    <a href="#">회원가입</a>
+                                </div>
+
+                                <div class="footWrap3">
+                                    <a href="#"><span>Facebook</span></a>
+                                    <a href="#"><span>Instergram</span></a>
+                                    <a href="#"><span>Youtube</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ft_bt">
+                        <div class="ft_bottom">
+                            <p>
+                                <span>이엘씨에이한국(유) 대표 TENG, HSIAO-HUA 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232 <br></span>
+                                <span>사업자등록번호: 211-81-71889|<br></span>
+                                <span>통신판매업신고번호: 강남-15737호|<br></span>
+                                <span>고객관리지원팀: 02-6971-3291 CONSUMERCARE@KR.MACCOSMETICS.COM|<br></span>
+                                <span>호스팅서비스 사업자: ㈜엘지유플러스</span>
+                            </p>
+                        </div>
+
+                        <div class="ft_logo">
+                            <a href="index.html">맥로고</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
