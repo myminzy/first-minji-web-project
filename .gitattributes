@@ -1,0 +1,6 @@
+# 라이브러리(js라이브러리)는 비율에서 제외
+lib/*.js linguist-vendored
+
+# 직접 작성한 JS는 JavaScript로 인식되게 지정
+main.js linguist-language=JavaScript
+sub.js linguist-language=JavaScript
